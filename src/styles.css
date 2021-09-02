@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .dropdown-toggle::after { display: none; }
+    .bordered-navbar{
+        display: inline-block;
+        border: 1px solid rgb(226, 226, 226);
+        width: 100%;
+      }
+    .dropdown {
+        position:static;
+    }
+    .dropdown-menu {
+        border:rgb(255, 254, 254);
+        margin-top:0px;
+        width:100%;
+    }
+    svg {
+        width: 50px;
+        height: 25px;
+      }
+  
+
+
+      /**MBW mybloggersworld.com Navgation bar **/
+ #mbwnavbar {
+    background: #ffffff;
+    color: #000000;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    height:35px;
+}
+#mbwnav {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+}
+
+#mbwnav li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display:inline-block;
+    border-left:0px solid #333;
+    border-right:0px solid #333;
+    height: 35px;
+}
+#mbwnav li a, #mbwnav li a:link, #mbwnav li a:visited {
+    color: #000000;
+    display: inline-block;
+    font: 14px sans-serif;
+    margin: 0;
+    text-align: left;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+}
+#mbwnav li ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
+}
+#mbwnav li ul a {
+    width: 100px;
+}
+#mbwnav li ul ul {
+    margin: -25px 0 0 161px;
+}
+#mbwnav li:hover ul ul, #mbwnav li:hover ul ul ul, #mbwnav li.sfhover ul ul, #mbwnav li.sfhover ul ul ul {
+    left: -999em;
+}
+#mbwnav li:hover ul, #mbwnav li li:hover ul, #mbwnav li li li:hover ul, #mbwnav li.sfhover ul, #mbwnav li li.sfhover ul, #mbwnav li li li.sfhover ul {
+    left: auto;
+}
+#mbwnav li:hover, #mbwnav li.sfhover {
+    position: static;
+}
+#mbwnav li li a, #mbwnav li li a:link, #mbwnav li li a:visited {
+    background: #ffffff;
+    width: 120px;
+    color: #000000;
+    display: inline-block;
+    font:normal 14px sans-serif;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+    z-index:9999;
+    border-bottom:0px dotted #333;
+}
+}
