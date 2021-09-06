@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
     templateUrl: 'top-mega-menu.component.html'
    })
    
-   export class TopMegaMenu {
+   export class TopMegaMenuComponent {
    
    }
 
