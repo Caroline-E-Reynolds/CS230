@@ -1,0 +1,25 @@
+.banner{
+    width:100%;
+    max-height:100px;
+    overflow: hidden;
+    background-color: #315470 !important;
+    color:#ffffff;
+    font-size: 12.5px;
+    line-height: inherit;
+    height: 60px !important;
+    text-align: center;
+    padding-right: 4px;
+    font-family: bold 'Avenir Next Demi';
+    letter-spacing: .5px;
+}
+
+.banner a{
+    white-space:nowrap;
+    font-family: bold 'Avenir Next Demi';
+    font-size: 11px;
+    padding-right: 3px;
+    display:inline-block;
+    letter-spacing: .5px;
+    text-decoration: underline;
+    color:#ffffff;
+} 
