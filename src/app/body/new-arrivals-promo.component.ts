@@ -7,5 +7,6 @@ import { Component } from "@angular/core";
    })
    
    export class NewArrivalsPromoComponent {
-   
+    title = "FALLING FOR NEW ARRIVALS"
+    subheader = "More new styles dropping every day!"
    }

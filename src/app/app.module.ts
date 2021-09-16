@@ -7,6 +7,7 @@ import { PromotionBannerComponent } from './header/promotion-banner.component';
 import { TopBrandLogoComponent } from './header/top-brand-logo.component';
 import { TopMegaMenuComponent } from './header/top-mega-menu.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
+import { LayoutMainComponent } from './Layout/main-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TopNavBarComponent } from './header/top-nav-bar.component';
     TopMegaMenuComponent,
     TopBrandLogoComponent,
     PromotionBannerComponent,
-    NewArrivalsPromoComponent
+    NewArrivalsPromoComponent,
+    LayoutMainComponent
   ],
   imports: [
     BrowserModule

@@ -11,8 +11,8 @@ video{
     text-align: center;
     transform: translate(-50%,-50%);
     position: absolute;
-    width:51%;
-    top: 72%;
+    width:41%;
+    top:83%;
     left:50%;
     padding:8.333333%;
 }
@@ -54,5 +54,4 @@ video{
     font-family: bold 'Avenir Next Demi'!important;
     text-decoration: none;
     border:1px solid transparent;
-    
 }
