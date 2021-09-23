@@ -9,6 +9,10 @@ import { TopBrandLogoComponent } from './header/top-brand-logo.component';
 import { TopMegaMenuComponent } from './header/top-mega-menu.component';
 import { TopNavBarComponent } from './header/top-nav-bar.component';
 import { LayoutMainComponent } from './Layout/main-layout.component';
+import { LayoutMenJeansComponent } from './Layout/Mens-jeans/mens-jeans-layout.component';
+import { LayoutMenNewComponent } from './Layout/Mens-new/mens-new-layout.component';
+import { LayoutWomenJeansComponent } from './Layout/Womens-jeans/womens-jeans-layout.component';
+import { LayoutWomenNewComponent } from './Layout/Womens-new/womens-new-layout.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,17 @@ import { LayoutMainComponent } from './Layout/main-layout.component';
     PromotionBannerComponent,
     NewArrivalsPromoComponent,
     LayoutMainComponent,
-    NewComponent
+    NewComponent,
+    LayoutWomenNewComponent,
+    LayoutMenNewComponent,
+    LayoutWomenJeansComponent,
+    LayoutMenJeansComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: []
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

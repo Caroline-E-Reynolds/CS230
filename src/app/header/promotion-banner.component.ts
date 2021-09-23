@@ -7,8 +7,10 @@ import { Component } from "@angular/core";
    })
    
    export class PromotionBannerComponent {
-    promo = "Use code: AUTUMN20 & take an extra 20% off, exclusively in the app!"
+    promo = "20% off jeans & joggers! Select styles."
     divider =" | "
-    link1 = "Downlaod the lastest version"
-    link2 = "Details"
+    link1 = "Women's Jeans"
+    link2 = "Men's Jeans"
+    link3 = "Women's Joggers"
+    link4="Men's Joggers"
    }
