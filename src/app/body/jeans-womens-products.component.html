@@ -1,0 +1,6 @@
+<div class="row row-cols-3">
+    <div *ngFor="let womensJeansProducts of womensJeansProducts;">
+            <app-jeans-womens-product-card title={{womensJeansProducts.title}} tag={{womensJeansProducts.tag}}
+                price={{womensJeansProducts.price}} imagePath={{womensJeansProducts.imagePath}}>Card
+            </app-jeans-womens-product-card>
+    </div>

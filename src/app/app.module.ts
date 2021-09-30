@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { JeanWomensProductCardComponent } from './body/jeans-womens-product-card.component';
+import { JeanWomensProductsComponent } from './body/jeans-womens-products.component';
 import { NewArrivalsPromoComponent } from './body/new-arrivals-promo.component';
 import { NewComponent } from './body/new.component';
 import { PromotionBannerComponent } from './header/promotion-banner.component';
@@ -27,7 +29,9 @@ import { LayoutWomenNewComponent } from './Layout/Womens-new/womens-new-layout.c
     LayoutWomenNewComponent,
     LayoutMenNewComponent,
     LayoutWomenJeansComponent,
-    LayoutMenJeansComponent
+    LayoutMenJeansComponent,
+    JeanWomensProductsComponent,
+    JeanWomensProductCardComponent
   ],
   imports: [
     BrowserModule,
