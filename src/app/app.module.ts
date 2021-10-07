@@ -15,6 +15,9 @@ import { LayoutMenJeansComponent } from './Layout/Mens-jeans/mens-jeans-layout.c
 import { LayoutMenNewComponent } from './Layout/Mens-new/mens-new-layout.component';
 import { LayoutWomenJeansComponent } from './Layout/Womens-jeans/womens-jeans-layout.component';
 import { LayoutWomenNewComponent } from './Layout/Womens-new/womens-new-layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +34,14 @@ import { LayoutWomenNewComponent } from './Layout/Womens-new/womens-new-layout.c
     LayoutWomenJeansComponent,
     LayoutMenJeansComponent,
     JeanWomensProductsComponent,
-    JeanWomensProductCardComponent
+    JeanWomensProductCardComponent,
+    UserInfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
