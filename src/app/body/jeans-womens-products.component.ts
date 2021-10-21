@@ -1,18 +1,30 @@
-import { Component } from "@angular/core";
-import { mock_jean_products_womens } from "./mock-jean-products-womens";
+import { Component, OnInit } from "@angular/core";
+import { InfoService } from "./info.services";
 import { WomensJeansProducts } from "./womens-jeans-products.model";
+
 
 @Component({
     selector:"app-jeans-womens-products",
     templateUrl:"jeans-womens-products.component.html",
 
 })
-export class JeanWomensProductsComponent{
-    womensJeansProducts:WomensJeansProducts[] = [];
+export class JeanWomensProductsComponent implements OnInit{
+    womensJeansProducts:WomensJeansProducts[] =[];
 
-    constructor(){
-        for(var womensJeansProducts of mock_jean_products_womens){
-            this.womensJeansProducts.push(new WomensJeansProducts(womensJeansProducts));
-        }
+    constructor(private infoService : InfoService){
+
+    }
+    ngOnInit(): void{
+        console.log("Getting product info");
+        this.showProductInfo();
+    }
+    showProductInfo(){
+        this.infoService.getUserInfo().subscribe((data:WomensJeansProducts[])=>{
+            for(var item in data){
+                console.log(data[item]);
+                this.womensJeansProducts.push(data[item]);
+            }
+            
+        })
     }
 }
