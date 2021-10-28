@@ -18,6 +18,9 @@ import { LayoutWomenNewComponent } from './Layout/Womens-new/womens-new-layout.c
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
 import { FooterComponent } from './footer/footer.component';
+import { LayoutCreateAccountComponent } from './Layout/Account/create-account-layout.component';
+import { AccountFormComponent } from './body/create-account-form';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,12 +39,15 @@ import { FooterComponent } from './footer/footer.component';
     JeanWomensProductsComponent,
     JeanWomensProductCardComponent,
     UserInfoComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutCreateAccountComponent,
+    AccountFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

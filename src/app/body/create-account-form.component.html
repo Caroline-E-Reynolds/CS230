@@ -1,0 +1,23 @@
+<form #postForm="ngForm" (ngSubmit)="onCreateAccount(postForm.value)">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control shadow-dark" ngModel name="Email" placeholder="name@example.com">
+        <label>Email</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" ngModel name="Password" placeholder="Password">
+        <label>Password</label>
+    </div>
+    <div class="row g-2 justify-content-end">
+        <div class="form-floating mb-3 col-md">
+            <input type="text" class="form-control" ngModel name="FirstName" placeholder="name@example.com">
+            <label> First Name</label>
+        </div>
+        <div class="form-floating mb-3 col-md">
+            <input type="text" class="form-control m" ngModel name="LastName" placeholder="name@example.com">
+            <label> Last Name</label>
+        </div>
+    </div>
+    <button class="btn-dark btn-rounded w-100" type="submit">
+        Create Account
+    </button>
+</form>

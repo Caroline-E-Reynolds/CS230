@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NewComponent } from './body/new.component';
+import { LayoutCreateAccountComponent } from './Layout/Account/create-account-layout.component';
 import { LayoutMainComponent } from './Layout/main-layout.component';
 import { LayoutMenJeansComponent } from './Layout/Mens-jeans/mens-jeans-layout.component';
 import { LayoutMenNewComponent } from './Layout/Mens-new/mens-new-layout.component';
@@ -13,7 +14,9 @@ const routes: Routes = [
   {path: 'new-men', component : LayoutMenNewComponent},
   {path: 'jeans-women', component : LayoutWomenJeansComponent},
   {path: 'jeans-men', component : LayoutMenJeansComponent},
+  {path: 'create-account', component : LayoutCreateAccountComponent},
   {path: '', component : LayoutMainComponent}
+
 ];
 
 @NgModule({
