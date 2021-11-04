@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "spotify:build:production",
+            "firebaseProject": "american-eagle-app",
+            "firebaseHostingSite": "american-eagle"
+          }
         }
       }
     }

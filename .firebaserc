@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "american-eagle-app": {
+      "hosting": {
+        "spotify": [
+          "american-eagle"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "american-eagle-app"
+  }
+}
